@@ -1,0 +1,5 @@
+claim_id,employee_id,status,reimbursed_on,category,vendor,receipt_date,receipt_no,receipt_amount,claim_amount
+CLM-0987,E103,reimbursed,2026-10-24,client_meal,Lakeside Bistro,2026-10-16,LB-55821,151.20,151.20
+CLM-0821,E105,reimbursed,2026-06-12,learning,LearnLoop Online,2026-06-02,LL-77120,200.00,200.00
+CLM-0955,E101,reimbursed,2026-10-03,work_from_home,BrightNet Broadband,2026-09-30,BN-20260901-7102,45.00,45.00
+CLM-0990,E102,reimbursed,2026-10-20,travel_meal,Corner Noodle Bar,2026-10-08,CN-1043,27.80,27.80
