@@ -1,0 +1,7 @@
+claim_id,employee_id,submitted_date,category,description,expense_dates,attendees,business_purpose,travel_request_id,claimed_amount
+CLM-1001,E101,2026-11-02,work_from_home,October home internet bill,,,,,45.00
+CLM-1002,E102,2026-10-29,team_meal,Q3 product launch team dinner,2026-10-22,Daniel Okafor; Priya Nair; Sofia Alvarez; Marcus Lee; Anita Rao; Tom Becker,,,443.52
+CLM-1003,E103,2026-11-04,client_meal,Lunch with client to discuss renewal,2026-10-16,Rahul Mehta; Jordan Pierce (Northwind Traders),Contract renewal discussion,,151.20
+CLM-1004,E104,2026-10-28,business_trip,"Client onsite, Northwind Traders, Chicago",2026-10-13 to 2026-10-15,,Quarterly onsite with Northwind Traders,TR-2210,1417.62
+CLM-1005,E105,2026-11-05,learning,DataCon 2026 conference registration (early bird),2026-10-20,,,,1200.00
+CLM-1006,E106,2026-11-03,medical,Clinic visit and prescriptions,2026-10-21,,,,184.20
