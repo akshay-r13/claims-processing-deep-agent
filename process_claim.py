@@ -29,4 +29,4 @@ def load_claim(claim_id):
 if __name__ == "__main__":
     args = parser.parse_args()
     claim_data = load_claim(args.claim_id)
-    claims_agent.process_claim(claim_data)
+    claims_agent.process_claim(claim_data, log_tool_calls=True, log_thoughts=True)

@@ -6,8 +6,9 @@ from deepagents.backends import CompositeBackend, FilesystemBackend, StateBacken
 from .subagents import RECEIPT_READER
 from .tools import calculate, read_pdf
 from config.paths import DATA_DIR, OUTPUT_DIR
+from langchain.chat_models import init_chat_model
 
-MODEL = os.environ["CLAIMS_MODEL"]
+MODEL = init_chat_model(os.environ["CLAIMS_MODEL"], include_thoughts=True)
 
 SYSTEM_PROMPT = """You are an expense claims reviewer at Acme Inc. You review one claim at a time
 against the company policy and its receipts, then decide what happens next.
