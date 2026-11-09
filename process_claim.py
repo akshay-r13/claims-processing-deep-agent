@@ -1,18 +1,19 @@
 import argparse
 import csv
-from pathlib import Path
 
 from dotenv import load_dotenv
 load_dotenv()
 
 from agent import claims_agent
+from config.paths import DATA_DIR, CLAIM_REQUESTS_LIST
 
-DATA_DIR = Path(__file__).resolve().parent / "data"
-OUTPUT_DIR = Path(__file__).parent / "outputs"
-CLAIM_REQUESTS_LIST = DATA_DIR / "claim_requests" / "claim_requests.csv"
 
 parser = argparse.ArgumentParser(
-    description=f"A script that processes a claim request from {CLAIM_REQUESTS_LIST}"
+    description=(
+        f"A Script that processes a claim request from {CLAIM_REQUESTS_LIST}"
+        "Example: process_claim.py CLM-1001"
+        f"The script spawns an agent which processes the request by investigating supporting documents and previous claim history from {DATA_DIR}"
+    )
 )
 parser.add_argument("claim_id", type=str, help=f"ID of Claim from file {CLAIM_REQUESTS_LIST}")
 
